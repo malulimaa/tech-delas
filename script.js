@@ -1,3 +1,8 @@
+// A página de oportunidades só abre após o envio do formulário nesta sessão.
+if (window.location.pathname.endsWith("/conteudo.html") && !sessionStorage.getItem("techDelasParticipant")) {
+  window.location.replace("cadastro.html");
+}
+
 const REGISTRATION_ENDPOINT = "https://script.google.com/macros/s/AKfycbxTsYxeGSxN46GMMzOhCVOsALI-QLJVvQWyKhYYqKZc6XsLdIFQjQeBRTfJUUP56RX0/exec";
 
 const form = document.querySelector("#registration-form");
@@ -47,5 +52,17 @@ if (form) {
       button.disabled = false;
       button.innerHTML = "Continuar para o site <span>↗</span>";
     }
+  });
+}
+
+const communityTrack = document.querySelector("#community-track");
+if (communityTrack) {
+  document.querySelectorAll("[data-carousel-step]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = communityTrack.querySelector(".community-card");
+      const gap = Number.parseFloat(getComputedStyle(communityTrack).gap) || 0;
+      const direction = Number(button.dataset.carouselStep);
+      communityTrack.scrollBy({ left: direction * (card.offsetWidth + gap), behavior: "smooth" });
+    });
   });
 }

@@ -1,40 +1,54 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f3e8" />
-    <title>Seu espaço — Tech Delas</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f3e8" />
+  <meta name="description" content="Cursos gratuitos e comunidades para mulheres na tecnologia — Tech Delas." />
+  <title>Oportunidades — Tech Delas</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">td<span>·</span></span><span>tech
-                delas</span></a><a class="back-link" href="index.html">← Início</a></header>
-    <main class="content-page">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> VOCÊ CHEGOU</p>
-        <h1>Bem-vinda ao<br /><em>Tech Delas.</em></h1>
-        <p>Este é o começo de um espaço com informação, oportunidades e referências para mulheres na tecnologia. Em
-            breve, mais conteúdos serão adicionados.</p>
-        <div class="content-tiles"><a href="https://www.programaria.org/" target="_blank"
-                rel="noopener noreferrer"><span>01 / APRENDER</span><strong>Explore cursos<br />e conteúdos
-                    ↗</strong></a><a href="#iniciativas"><span>02 / DESCOBRIR</span><strong>Conheça iniciativas<br />e
-                    comunidades ↓</strong></a><a
-                href="https://www.mindtek.com.br/2026/03/mulheres-na-tecnologia-no-brasil/" target="_blank"
-                rel="noopener noreferrer"><span>03 / ENTENDER</span><strong>Leia sobre o cenário<br />no Brasil
-                    ↗</strong></a></div>
-        <section class="content-resources" id="iniciativas">
-            <h2>Leituras para começar</h2><a href="https://recima21.com.br/recima21/pt_BR/article/view/6654"
-                target="_blank" rel="noopener noreferrer">Artigo acadêmico sobre mulheres na tecnologia ↗</a><a
-                href="https://blog.techforhumans.com.br/post/mulheres-na-tecnologia-uma-analise-global-e-brasileira-da-representatividade-e-desafios"
-                target="_blank" rel="noopener noreferrer">Representatividade: análise global e brasileira ↗</a>
-        </section>
-    </main>
-    <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">td<span>·</span></span><span>tech
-                delas</span></a><span>INFORMAÇÃO • OPORTUNIDADE • COMUNIDADE</span><a href="index.html">VOLTAR AO TOPO
-            ↑</a></footer>
-    <script src="script.js"></script>
-</body>
 
+  <div class="academic-banner"><span>Projeto acadêmico</span><span aria-hidden="true">·</span><span>Atividade extensionista</span></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Tech Delas, início"><span class="brand-mark">td<span>·</span></span><span>tech delas</span></a>
+    <a class="back-link" href="index.html#leituras">← Leituras abertas</a>
+  </header>
+  <main class="content-page">
+    <p class="eyebrow"><span class="eyebrow-dot"></span> CONTEÚDO DA ATIVIDADE EXTENSIONISTA</p>
+    <h1>Seu próximo<br />passo começa<br /><em>aqui.</em></h1>
+    <p>Que bom ter você por aqui. Reunimos comunidades, cursos e plataformas para você explorar a tecnologia e encontrar apoio no seu caminho.</p>
+    <section class="content-section" aria-labelledby="communities-title">
+      <div class="content-section-heading"><div><span class="content-kicker">01 / CONECTAR</span><h2 id="communities-title">Comunidades &amp; redes de apoio</h2></div><p>Conheça iniciativas feitas para ampliar a presença e a troca entre mulheres na tecnologia.</p></div>
+      <div class="community-carousel">
+        <div class="community-carousel-controls">
+          <p>Use as setas ou arraste para o lado para explorar as iniciativas.</p>
+          <div class="carousel-buttons"><button type="button" data-carousel-step="-1" aria-label="Ver iniciativas anteriores">←</button><button type="button" data-carousel-step="1" aria-label="Ver próximas iniciativas">→</button></div>
+        </div>
+        <div class="community-track" id="community-track" tabindex="0" role="region" aria-label="Carrossel de comunidades e redes de apoio">
+          <a class="community-card community-pink" href="https://www.programaria.org/" target="_blank" rel="noopener noreferrer"><span class="community-card-top">01 / COMUNIDADE</span><span class="community-card-arrow">↗</span><h3>PrograMaria</h3><p>Formação, cursos e iniciativas para mulheres na tecnologia.</p><span class="community-card-link">Conhecer iniciativa</span></a>
+          <a class="community-card community-lime" href="https://www.womakerscode.org/comunidade" target="_blank" rel="noopener noreferrer"><span class="community-card-top">02 / COMUNIDADE</span><span class="community-card-arrow">↗</span><h3>WoMakersCode</h3><p>Comunidade, eventos, cursos e ciclos de mentoria.</p><span class="community-card-link">Acessar comunidade</span></a>
+          <a class="community-card community-blue" href="https://elasprogramam.com.br/" target="_blank" rel="noopener noreferrer"><span class="community-card-top">03 / INICIATIVA</span><span class="community-card-arrow">↗</span><h3>Elas Programam</h3><p>Iniciativa de inclusão e aprendizado em tecnologia.</p><span class="community-card-link">Conhecer iniciativa</span></a>
+          <a class="community-card community-paper" href="https://reprograma.com.br/" target="_blank" rel="noopener noreferrer"><span class="community-card-top">04 / FORMAÇÃO</span><span class="community-card-arrow">↗</span><h3>{reprograma}</h3><p>Formação gratuita em programação para mulheres; confira os processos seletivos abertos.</p><span class="community-card-link">Ver oportunidades</span></a>
+          <a class="community-card community-pink" href="https://mulheresnatecnologia.com.br/" target="_blank" rel="noopener noreferrer"><span class="community-card-top">05 / COMUNIDADE</span><span class="community-card-arrow">↗</span><h3>Mulheres na Tecnologia</h3><p>Conteúdos, vozes e comunidades tech para descobrir e acompanhar.</p><span class="community-card-link">Explorar a rede</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" aria-labelledby="courses-title">
+      <div class="content-section-heading"><div><span class="content-kicker">02 / APRENDER</span><h2 id="courses-title">Cursos &amp; plataformas gratuitas</h2></div><p>Opções para estudar no seu ritmo. Confira as condições, inscrições e certificados em cada plataforma.</p></div>
+      <div class="resource-list content-resource-list">
+        <a class="resource-row content-resource-row" href="https://www.ev.org.br/" target="_blank" rel="noopener noreferrer"><span class="resource-no">01</span><span class="resource-name">Fundação Bradesco — Escola Virtual <small>Cursos online gratuitos em programação e TI</small></span><span class="resource-type">GRATUITO · ONLINE</span><span class="resource-arrow">↗</span></a>
+        <a class="resource-row content-resource-row" href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer"><span class="resource-no">02</span><span class="resource-name">Curso em Vídeo <small>Aulas de programação, Python, JavaScript, Git e outros temas</small></span><span class="resource-type">GRATUITO · AULAS</span><span class="resource-arrow">↗</span></a>
+        <a class="resource-row content-resource-row" href="https://www.dio.me/" target="_blank" rel="noopener noreferrer"><span class="resource-no">03</span><span class="resource-name">DIO <small>Cursos e bootcamps; confira quais oportunidades estão gratuitas</small></span><span class="resource-type">CURSOS · BOOTCAMPS</span><span class="resource-arrow">↗</span></a>
+        <a class="resource-row content-resource-row" href="https://www.fiap.com.br/iel-ceara/learn-tech/" target="_blank" rel="noopener noreferrer"><span class="resource-no">04</span><span class="resource-name">Learn Tech — IEL-CE + FIAP <small>A parceria lista cursos gratuitos, incluindo opções de 100 horas; confira público elegível e inscrições</small></span><span class="resource-type">GRATUITO · PARCERIA</span><span class="resource-arrow">↗</span></a>
+      </div>
+      <p class="resource-disclaimer">Cursos, gratuidade, carga horária e períodos de inscrição podem mudar. Confirme os detalhes diretamente na página de cada instituição.</p>
+    </section>
+    <section class="content-next-step"><span>TECH DELAS · CONTINUE EXPLORANDO</span><a href="index.html#leituras">Voltar às leituras abertas <span>↗</span></a></section>
+  </main>
+  <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">td<span>·</span></span><span>tech delas</span></a><span>PROJETO ACADÊMICO · ATIVIDADE EXTENSIONISTA</span><a href="index.html">VOLTAR AO INÍCIO ↑</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
