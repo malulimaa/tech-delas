@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#f7f3e8" />
+    <meta name="description" content="Registre sua participação e conheça o Tech Delas." /><title>Participar — Tech Delas</title><link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="registration-page">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">td<span>·</span></span><span>tech delas</span></a><a class="back-link" href="index.html">← Voltar ao início</a></header>
+    <main class="register-layout"><section class="register-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> QUASE LÁ</p><h1>Seu próximo<br />passo começa<br /><em>aqui.</em></h1><p>Antes de entrar, conte para a gente quem está chegando. O formulário registra sua participação nesta atividade extensionista.</p><div class="register-decoration"><span>01</span><span>informação<br />abre caminhos</span><span>✳</span></div></section>
+      <section class="form-card"><div class="form-card-top"><span>TECH DELAS / PARTICIPAÇÃO</span><span>02 — 02</span></div><h2>Boas-vindas!</h2><p class="form-intro">Preencha seus dados para acessar o conteúdo.</p><form id="registration-form" novalidate>
+        <label for="name">Nome completo</label><input id="name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Como podemos te chamar?" required />
+        <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="voce@exemplo.com" required />
+        <label class="consent"><input id="consent" type="checkbox" required /><span>Concordo em fornecer esses dados para registro da participação nesta atividade extensionista. Entendi que serão usados apenas para essa finalidade.</span></label>
+        <label class="honeypot" aria-hidden="true">Não preencha este campo<input name="website" tabindex="-1" autocomplete="off" /></label>
+        <p class="form-error" id="form-error" role="alert"></p><button class="button button-dark submit-button" type="submit">Continuar para o site <span>↗</span></button>
+      </form><p class="privacy-note"><span class="lock-icon">▣</span> Seus dados não serão exibidos publicamente. A lista fica na planilha privada da responsável pelo projeto.</p><p class="setup-note" id="setup-note" hidden>O formulário ainda precisa ser conectado à planilha da responsável. Consulte o arquivo LEIA-ME para ativar os envios.</p></section>
+    </main><footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">td<span>·</span></span><span>tech delas</span></a><span>SEUS DADOS SÃO USADOS PARA REGISTRAR ESTA PARTICIPAÇÃO.</span><a href="index.html">VOLTAR AO INÍCIO ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
