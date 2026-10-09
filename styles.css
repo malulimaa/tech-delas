@@ -1215,6 +1215,12 @@ a {
   border-top: 1px solid var(--line);
 }
 
+.resource-disclaimer {
+    margin: 0;
+    color: #77736d;
+    font-size: 10px;
+}
+
 .content-resource-row {
   grid-template-columns: 42px minmax(0, 1fr) 130px 25px;
   gap: 8px;
