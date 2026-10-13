@@ -74,13 +74,13 @@ html:has(> body.landing-body) {
 
 .landing-hero h1 {
   margin: 20px 0 14px;
-  font: 800 clamp(64px, 7.5vw, 104px)/.88 var(--display);
-  letter-spacing: -.095em;
+  font: 400 clamp(64px, 7.5vw, 104px)/.88 "DM Serif Display", Georgia, serif;
+  letter-spacing: -.045em;
 }
 
 .landing-hero h1 em {
   color: #d74e96;
-  font-style: normal;
+  font-style: italic;
 }
 
 .landing-tagline {
