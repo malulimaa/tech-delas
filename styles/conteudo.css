@@ -5,6 +5,14 @@
   background-image: radial-gradient(ellipse at 12% 10%, rgba(255,239,223,.9), transparent 38%), radial-gradient(ellipse at 88% 82%, rgba(198,170,239,.75), transparent 42%), linear-gradient(135deg,#e7dcf4 0%,#eadcf0 48%,#d8c9ef 100%);
 }
 .content-body .topbar,.content-body .footer { border-color: rgba(91,65,130,.18); }
+.content-body .topbar { position:sticky; top:0; z-index:20; gap:8px; background:rgba(228,217,244,.94); backdrop-filter:blur(12px); }
+.content-body .topbar-nav { display:flex; align-items:center; gap:2px; }
+.content-body .topbar-nav a { padding:8px 10px; border-radius:999px; color:#514e59; font-size:11px; font-weight:600; line-height:1.2; transition:background-color 180ms ease,color 180ms ease,transform 180ms ease; }
+.content-body .topbar-nav a:hover { background:rgba(196,67,134,.1); color:#a43d7d; transform:translateY(-1px); }
+.content-body .topbar > a:focus-visible { outline:3px solid #8e65c1; outline-offset:3px; }
+.content-body .topbar .back-link { white-space: nowrap; }
+.content-body #topo { scroll-margin-top:100px; }
+.content-body #communities-title,.content-body #courses-title,.content-body #reading-title { scroll-margin-top:100px; }
 .content-body .eyebrow-dot { background:#c44386; }
 .content-body .back-link:hover,.content-body .footer>a:last-child:hover { color:#8d5bb8; }
 .content-page { width:min(100%,1180px); min-height:calc(100vh - 155px); margin:0 auto; padding:clamp(48px,7vw,92px) clamp(22px,7vw,96px) 88px; }
@@ -52,6 +60,6 @@
 .content-next-step a:hover { background:#8d5bb8; transform:translateY(-2px); }
 .content-next-step a span { font-size:16px; }
 .content-body .footer>a:last-child { color:#74658b; }
-@media(max-width:800px) { .content-section-heading { display:block; } .content-section-heading>p { margin-top:12px; } .content-next-step { grid-template-columns:1fr; align-items:start; } .content-next-step a { justify-self:start; } .community-card { min-height:260px; } }
-@media(max-width:600px) { .content-page { padding:50px 7% 64px; } .content-section { margin-top:56px; } .community-carousel-controls { align-items:flex-end; } .community-card { min-height:248px; flex-basis:100%; padding:21px; } .content-resource-row { min-height:76px; grid-template-columns:27px minmax(0,1fr) 62px 16px; gap:6px; } .resource-name { font-size:12px; } .resource-name small { font-size:9px; } .content-resource-row .resource-type { font-size:6px; letter-spacing:.04em; } .content-next-step { border-radius:18px; } .content-next-step a { width:100%; } }
+@media(max-width:800px) { .content-body .topbar { height:auto; min-height:66px; padding-block:12px; flex-wrap:wrap; justify-content:flex-start; } .content-body .topbar .brand { margin-right:auto; } .content-body .topbar-nav { order:3; width:100%; justify-content:center; } .content-body .topbar .back-link { margin-left:0; } .content-body #topo { scroll-margin-top:120px; } .content-section-heading { display:block; } .content-section-heading>p { margin-top:12px; } .content-next-step { grid-template-columns:1fr; align-items:start; } .content-next-step a { justify-self:start; } .community-card { min-height:260px; } }
+@media(max-width:600px) { .content-body .topbar { column-gap:5px; row-gap:7px; } .content-body .topbar-nav { gap:0; } .content-body .topbar-nav a { padding:8px; font-size:10px; } .content-body .topbar .back-link { font-size:10px; } .content-page { padding:50px 7% 64px; } .content-section { margin-top:56px; } .community-carousel-controls { align-items:flex-end; } .community-card { min-height:248px; flex-basis:100%; padding:21px; } .content-resource-row { min-height:76px; grid-template-columns:27px minmax(0,1fr) 62px 16px; gap:6px; } .resource-name { font-size:12px; } .resource-name small { font-size:9px; } .content-resource-row .resource-type { font-size:6px; letter-spacing:.04em; } .content-next-step { border-radius:18px; } .content-next-step a { width:100%; } }
 @media(prefers-reduced-motion:reduce) { .community-track { scroll-behavior:auto; } .community-card,.carousel-buttons button,.content-resource-row,.content-next-step a { transition:none; } .community-card:hover,.carousel-buttons button:hover,.content-next-step a:hover { transform:none; } }
