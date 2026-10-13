@@ -1,0 +1,169 @@
+:root {
+    --cream: #f7f3e8;
+    --paper: #fffdf7;
+    --ink: #171717;
+    --muted: #66635e;
+    --line: #d9d3c7;
+    --pink: #f287bd;
+    --pink-light: #f8c8df;
+    --lime: #d7f27b;
+    --blue: #bfd8f3;
+    --font: "DM Sans", Arial, sans-serif;
+    --display: Manrope, "DM Sans", Arial, sans-serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.55
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.topbar {
+    height: 78px;
+    padding: 0 7.2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(23, 23, 23, .12);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -.04em
+}
+
+.brand-mark {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: -.1em
+}
+
+.brand-mark span { color: #ec70af; }
+
+.back-link:hover {
+    color: #d74e96
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #47443f;
+    font-size: 10px;
+    letter-spacing: .13em;
+    font-weight: 700
+}
+
+.eyebrow-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #ec70af
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    border-radius: 99px;
+    padding: 14px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: transform .2s, background .2s
+}
+
+.button:hover {
+    transform: translateY(-2px)
+}
+
+.button-dark {
+    background: var(--ink);
+    color: white
+}
+
+.button-dark:hover {
+    background: #393333
+}
+
+.footer {
+    min-height: 77px;
+    padding: 18px 7.2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+    font-size: 8px;
+    letter-spacing: .1em;
+    color: #77736d
+}
+
+.footer .brand {
+    color: var(--ink);
+    font-size: 13px;
+    letter-spacing: -.04em
+}
+
+.back-link {
+    font-size: 11px;
+    font-weight: 600
+}
+
+@media (max-width:800px) {
+.topbar {
+        height: 66px;
+        padding: 0 5%
+}
+.footer {
+        padding: 17px 5%;
+        gap: 12px;
+        flex-wrap: wrap
+}
+
+.footer>span {
+        display: none
+}
+
+}
+
+@media (max-width:430px) {
+.button {
+        padding: 13px 16px
+}
+.footer .brand {
+        font-size: 12px
+}
+
+.footer>a:last-child {
+        font-size: 7px
+}
+}
+
+.project-label {
+  color: #69635e;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+}

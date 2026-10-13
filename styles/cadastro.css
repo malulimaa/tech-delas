@@ -1,0 +1,88 @@
+.registration-page {
+  min-height: 100vh;
+  background-color: #e4d9f4;
+  background-image:
+    radial-gradient(ellipse at 12% 10%, rgba(255, 239, 223, .9), transparent 38%),
+    radial-gradient(ellipse at 88% 82%, rgba(198, 170, 239, .75), transparent 42%),
+    linear-gradient(135deg, #e7dcf4 0%, #eadcf0 48%, #d8c9ef 100%);
+}
+
+.registration-page .topbar,
+.registration-page .footer { border-color: rgba(91, 65, 130, .18); }
+.registration-page .eyebrow-dot { background: #c44386; }
+
+.register-layout {
+  min-height: calc(100vh - 155px);
+  padding: 60px 9%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .75fr);
+  gap: 10%;
+  align-items: center;
+}
+
+.register-copy h1 {
+  margin: 23px 0;
+  font: 700 clamp(54px, 6.5vw, 78px)/.99 var(--display);
+  letter-spacing: -.075em;
+}
+.register-copy h1 em { color: #c44386; font-style: normal; }
+.register-copy > p:not(.eyebrow) { max-width: 380px; color: #514e49; font-size: 14px; line-height: 1.7; }
+
+.register-decoration {
+  max-width: 370px;
+  margin-top: 56px;
+  padding-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(91, 65, 130, .2);
+  color: #6f6a78;
+  font-size: 9px;
+}
+.register-decoration span:first-child { color: #c44386; font-size: 11px; }
+.register-decoration span:last-child { color: #c44386; font-size: 24px; }
+
+/* O painel destaca apenas o formulário; a página permanece aberta como no index. */
+.form-card {
+  padding: 30px 31px;
+  border: 1px solid rgba(117, 88, 158, .2);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(246, 239, 255, .94), rgba(229, 213, 251, .92) 60%, rgba(248, 226, 241, .94));
+  box-shadow: 0 18px 55px rgba(91, 65, 130, .14);
+}
+.form-card-top { display: flex; justify-content: space-between; color: #74658b; font-size: 8px; letter-spacing: .11em; }
+.form-card h2 { margin: 35px 0 6px; font: 700 32px/1.1 var(--display); letter-spacing: -.06em; }
+.form-intro { margin: 0 0 25px; color: #625a6d; font-size: 12px; }
+.form-card form > label:not(.consent):not(.honeypot) { display: block; margin: 16px 0 7px; font-size: 10px; font-weight: 700; }
+
+.form-card input[type="text"],
+.form-card input[type="email"] {
+  width: 100%;
+  height: 47px;
+  padding: 0 13px;
+  border: 1px solid rgba(117, 88, 158, .27);
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, .62);
+  font: 12px var(--font);
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.form-card input:focus { border-color: #9b71ce; background: #fff; box-shadow: 0 0 0 3px rgba(155, 113, 206, .17); }
+.form-card input::placeholder { color: #8b8294; }
+
+.consent { display: flex; align-items: flex-start; gap: 10px; margin: 19px 0 13px; color: #514e59; font-size: 10px; line-height: 1.5; }
+.consent input { flex: 0 0 auto; margin: 2px 0 0; accent-color: #8e65c1; }
+.submit-button { width: 100%; margin-top: 5px; border: 0; cursor: pointer; }
+.submit-button:disabled { opacity: .65; cursor: wait; }
+.privacy-note { margin: 18px 0 0; padding-top: 15px; border-top: 1px solid rgba(117, 88, 158, .2); color: #514e59; font-size: 9px; line-height: 1.5; }
+.lock-icon { margin-right: 5px; color: #c44386; }
+.setup-note { margin: 12px 0 0; color: #8b572e; font-size: 9px; line-height: 1.5; }
+.form-error { display: none; margin: 8px 0; color: #a72c68; font-size: 10px; }
+.form-error.show { display: block; }
+.honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+@media (max-width: 800px) {
+  .register-layout { min-height: auto; padding: 47px 7%; grid-template-columns: 1fr; gap: 30px; }
+  .register-decoration { margin-top: 30px; }
+  .form-card { padding: 24px; }
+}

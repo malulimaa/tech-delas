@@ -4,25 +4,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f7f3e8" />
+  <meta name="theme-color" content="#e4d9f4" />
   <meta name="description" content="Cursos gratuitos e comunidades para mulheres na tecnologia — Tech Delas." />
   <title>Oportunidades — Tech Delas</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/conteudo.css" />
 </head>
 
-<body>
+<body class="content-body">
 
-  <header class="topbar">
+  <header class="topbar" id="topo">
     <a class="brand" href="index.html" aria-label="Tech Delas, início"><span
         class="brand-mark">td<span>·</span></span><span>tech delas</span></a>
     <span class="project-label">PROJETO ACADÊMICO · ATIVIDADE EXTENSIONISTA</span>
-    <a class="back-link" href="index.html#inicio">← Leituras abertas</a>
+    <a class="back-link" href="index.html#inicio">← Início</a>
   </header>
   <main class="content-page">
     <p class="eyebrow"><span class="eyebrow-dot"></span> CONTEÚDO DA ATIVIDADE EXTENSIONISTA</p>
-    <h1>Seu próximo<br />passo começa<br /><em>aqui.</em></h1>
-    <p>Que bom ter você por aqui. Reunimos comunidades, cursos e plataformas para você explorar a tecnologia e encontrar
-      apoio no seu caminho.</p>
+    <h1>Encontre apoio,<br />formação e<br /><em>referências.</em></h1>
+    <p>Um ponto de partida para aprender, encontrar sua comunidade e acompanhar a presença de mulheres na tecnologia.</p>
     <section class="content-section" aria-labelledby="communities-title">
       <div class="content-section-heading">
         <div><span class="content-kicker">01 / CONECTAR</span>
@@ -118,9 +118,13 @@
         <a class="resource-row content-resource-row" href="https://recima21.com.br/recima21/pt_BR/article/view/6654" target="_blank" rel="noopener noreferrer"><span class="resource-no">04</span><span class="resource-name">Pesquisa acadêmica sobre mulheres na tecnologia <small>Artigo científico</small></span><span class="resource-type">PESQUISA</span><span class="resource-arrow">↗</span></a>
       </div>
     </section>
-    <section class="content-next-step">
+    <section class="content-next-step" aria-labelledby="next-step-title">
       <span>TECH DELAS · CONTINUE EXPLORANDO</span>
-      <a href="index.html#leituras">Voltar à página inicial <span>↗</span></a>
+      <div>
+        <h2 id="next-step-title">Toda trajetória começa com uma possibilidade.</h2>
+        <p>Volte à página inicial para conhecer os dados que inspiraram esta seleção.</p>
+      </div>
+      <a href="index.html#inicio">Voltar à página inicial <span aria-hidden="true">↗</span></a>
     </section>
   </main>
   <footer class="footer">
@@ -128,7 +132,7 @@
       <span class="brand-mark">td<span>·</span></span>
       <span>techdelas</span>
     </a>
-    <a href="index.html">VOLTAR AO INÍCIO</a>
+    <a href="#topo">VOLTAR AO TOPO ↑</a>
   </footer>
   <script src="script.js"></script>
 </body>
