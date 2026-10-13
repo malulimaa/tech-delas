@@ -7,7 +7,11 @@
   --content-purple: #654a78;
   --content-pink: #c44386;
   min-height: 100vh;
-  background: var(--content-paper);
+  background-color: var(--content-paper);
+  background-image:
+    radial-gradient(ellipse at 92% 12%, rgba(198, 170, 239, .18), transparent 34%),
+    radial-gradient(ellipse at 8% 58%, rgba(196, 67, 134, .045), transparent 30%),
+    linear-gradient(135deg, #f7f5f1 0%, #f5f1f6 52%, #f7f5f1 100%);
   color: var(--content-ink);
   font-family: "DM Sans", Arial, sans-serif;
 }
