@@ -22,7 +22,7 @@ Por meio de uma página web informativa e centralizada, o projeto reúne e compa
 ## Prévia da Página
 
 <p align="center">
-  <img src="Screenshot.jpeg" alt="Prévia da página principal do projeto Tech Delas" width="85%">
+  <img src="./src/Screenshot.png" alt="Prévia da página principal do projeto Tech Delas" width="85%">
 </p>
 
 ## Objetivos e Impacto
@@ -51,7 +51,7 @@ Este projeto está diretamente alinhado com a **Agenda 2030 da ONU**:
 Por se tratar de uma página estática hosted diretamente no GitHub Pages, nenhum processo de instalação é necessário. 
 
 Você pode acessar o portal diretamente pelo seu navegador através do link:
-👉 **[Acessar a Plataforma Tech Delas](https://seu-usuario.github.io/nome-do-repositorio)** *(Substitua pelo link final do seu GitHub Pages)*
+👉 **[Acessar a Plataforma Tech Delas](https://malulimaa.github.io/tech-delas/index.html)**
 
 ## Tecnologias Utilizadas
 
