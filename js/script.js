@@ -1,6 +1,6 @@
 // A página de oportunidades só abre após o envio do formulário nesta sessão.
 if (window.location.pathname.endsWith("/conteudo.html") && !sessionStorage.getItem("techDelasParticipant")) {
-  window.location.replace("cadastro.html");
+  window.location.replace("../pages/cadastro.html");
 }
 
 const REGISTRATION_ENDPOINT = "https://script.google.com/macros/s/AKfycbxTsYxeGSxN46GMMzOhCVOsALI-QLJVvQWyKhYYqKZc6XsLdIFQjQeBRTfJUUP56RX0/exec";
@@ -27,7 +27,7 @@ if (form) {
       return;
     }
     if (!REGISTRATION_ENDPOINT) {
-      errorBox.textContent = "O formulário ainda não está conectado. Siga o LEIA-ME.md para configurar a planilha da responsável.";
+      errorBox.textContent = "O formulário ainda não está conectado.";
       errorBox.classList.add("show");
       return;
     }
@@ -45,7 +45,7 @@ if (form) {
         body: new URLSearchParams({ name, email, consent: "true", website: "" })
       });
       sessionStorage.setItem("techDelasParticipant", name);
-      window.location.href = "conteudo.html";
+      window.location.href = "../pages/conteudo.html";
     } catch (error) {
       errorBox.textContent = "Não foi possível enviar agora. Verifique sua conexão e tente novamente.";
       errorBox.classList.add("show");
