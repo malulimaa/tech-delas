@@ -346,6 +346,13 @@
   font-weight: 500;
 }
 
+.paths-list i {
+  justify-self: end;
+  color: var(--content-pink);
+  font-size: 20px;
+  line-height: 1;
+}
+
 .paths-cards {
   margin-top: 48px;
   display: grid;
@@ -360,9 +367,15 @@
   background: var(--content-white);
 }
 
-.paths-cards>article>span {
+.paths-cards>article>span,
+.paths-cards>article>i {
   color: var(--content-pink);
   font-size: 23px;
+}
+
+.paths-cards>article>i {
+  display: inline-block;
+  line-height: 1;
 }
 
 .paths-cards h3 {
